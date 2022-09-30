@@ -1,0 +1,30 @@
+[IP]
+command=ip addr | awk "/enp0s3/" | grep "inet" | awk '{printf("🔗 %s", $2}'
+interval=1
+color=#F50400
+
+[DISK]
+command=df -h / | awk '/\//{ printf(" 💾 %s/%s \n", $4, $2) }'
+interval=2
+color=#C9E3DB
+
+[CPU]
+full_text= CPU:  0.00% @ +00.0°C 
+command=~/.config/i3blocks/cpu.sh
+interval=1
+color=#00B4EB
+
+[MEM]
+command=free -h | awk '/Mem:/ { printf("  %s/%s \n", $3, $2) }'
+interval=1
+color=#FEC925
+
+[SWAP]
+command=free -h | awk '/Swap:/ { printf("  %s/%s \n", $3, $2) }'
+interval=1
+color=#0EC900
+
+
+[TIME_DATE]
+command=date +" %a, %d %b - %H:%M:%S"
+interval=1
