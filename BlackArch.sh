@@ -138,7 +138,7 @@ paru -Sy
 
 echo -e "$(tput setaf 5)\n##########		ZSH y Herramientas de Hacking		##########$(tput setaf 7)"
 paru -S zsh-theme-powerlevel10k-git --noconfirm
-#paru -S python3 openvpn openssh nmap hydra dirb wfuzz ffuf seclists metasploit exploitdb radare2 sslscan whatweb nikto ssb smbclient impacket rubeus evilwinrm hashcat john --noconfirm
+paru -S python3 openvpn openssh nmap hydra dirb wfuzz ffuf seclists metasploit exploitdb radare2 sslscan whatweb nikto ssb smbclient impacket rubeus evilwinrm hashcat john --noconfirm
 
 
 echo -e "$(tput setaf 3)\n##########		NVCHAD		##########$(tput setaf 7)"
